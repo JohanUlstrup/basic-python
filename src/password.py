@@ -24,10 +24,15 @@ for n in password:
     elif n=="$" or n=="#" or n=="@":
         special= True
     
-if len(password)<=6 and len(password)<=16:
+if len(password)>=6 and len(password)<=16:
     minmax=True
-    
-
-if lower == True and upper == True and numb == True and special == True and minmax== True:
+"""     
+print(lower)
+print(upper)
+print(numb)
+print(special)
+print(minmax)
+ """
+if lower and upper and numb and special  and minmax:
     is_valid = True
 print(is_valid)
